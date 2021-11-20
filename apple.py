@@ -63,7 +63,7 @@ if uploaded_file is not None:
     elif label == 1:
         st.markdown('## The apple variety is : <h class="font">apple_crimson_snow_1</h>', unsafe_allow_html=True)
     elif label == 2:
-        st.markdown('## The apple variety is : <h class="font">apple_golden_1,2 or 3</h>', unsafe_allow_html=True)  # apple_golden_2 and apple_golden_3 seem to be clubbed along with apple_golden_1
+        st.markdown('## The apple variety is : <h class="font">apple_golden</h>', unsafe_allow_html=True)  # apple_golden_2 and apple_golden_3 seem to be clubbed along with apple_golden_1
     elif label == 3:
         st.markdown('## The apple variety is : <h class="font">apple_granny_smith_1</h>', unsafe_allow_html=True)
     elif label == 4:

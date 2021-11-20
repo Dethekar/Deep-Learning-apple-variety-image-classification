@@ -54,7 +54,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
 
     st.image(image, width=300, caption='Uploaded an Image.', use_column_width=False)
-    #st.write(" Link for test images - https://github.com/Dethekar/Deep-Learning-apple-variety-image-classification/tree/main/Test ")
+    #st.write(" Link for test images - https://github.com/Dethekar/Deep-Learning-apple-variety-image-classification/tree/Test-images/Test ")
     st.write("Classifying the image.........please wait")
     st.markdown(""" <style> .font {font-size:40px ; font-family: 'Cooper Black'; color: #FF9633;} </style> """, unsafe_allow_html=True)
     label = teachable_machine_classification(image, 'keras_model.h5')

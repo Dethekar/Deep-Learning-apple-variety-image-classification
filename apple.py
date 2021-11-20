@@ -48,13 +48,13 @@ def teachable_machine_classification(img, file):
 st.title("Using Computer Vision in Supply Chain Management")
 st.header("Image Classification - Apple Variety")
 st.text("Upload an image of an apple to identify its variety")
+st.text(" Link for test images - https://github.com/Dethekar/Deep-Learning-apple-variety-image-classification/tree/Test-images/Test ")
 # file upload and handling logic
 uploaded_file = st.file_uploader("Choose an Image", type=("jpeg","jpg"))
 if uploaded_file is not None:
     image = Image.open(uploaded_file).convert('RGB')
 
     st.image(image, width=300, caption='Uploaded an Image.', use_column_width=False)
-    #st.write(" Link for test images - https://github.com/Dethekar/Deep-Learning-apple-variety-image-classification/tree/Test-images/Test ")
     st.write("Classifying the image.........please wait")
     st.markdown(""" <style> .font {font-size:40px ; font-family: 'Cooper Black'; color: #FF9633;} </style> """, unsafe_allow_html=True)
     label = teachable_machine_classification(image, 'keras_model.h5')
